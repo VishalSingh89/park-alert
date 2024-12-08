@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import './VehiclePage.css'; // Import the CSS file
 
 const VehiclePage = () => {
   const { id } = useParams();
@@ -18,12 +19,15 @@ const VehiclePage = () => {
   if (!vehicle) return <p>Loading...</p>;
 
   return (
-    <div>
+    <div className="vehicle-container">
       <h1>Vehicle Information</h1>
       <p><strong>Owner:</strong> {vehicle.owner}</p>
       <p><strong>Phone:</strong> {vehicle.phone}</p>
       <p><strong>License Plate:</strong> {vehicle.licensePlate}</p>
-      <a href={`tel:${vehicle.phone}`}>Call Owner</a> | <a href={`sms:${vehicle.phone}`}>SMS</a>
+      <div className="button-container">
+        <a href={`tel:${vehicle.phone}`} className="button">Call Owner</a>
+        <a href={`sms:${vehicle.phone}`} className="button">SMS</a>
+      </div>
     </div>
   );
 };
