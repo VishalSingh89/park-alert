@@ -48,7 +48,7 @@ const QRHome = () => {
 
           <div className="contact-buttons">
             <button onClick={handleCall} className="call-btn">Call</button>
-            <button onClick={handleSMS} className="sms-btn">Send SMS</button>
+            <button onClick={handleSMS} className="sms-btn"> SMS</button>
           </div>
         </div>
       ) : (
