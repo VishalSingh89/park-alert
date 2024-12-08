@@ -1,0 +1,58 @@
+/* General Container Styling */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+/* Title Styling */
+.qr-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Error Message Styling */
+.qr-error {
+    margin-top: 20px;
+    color: red;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Download Button Styling */
+.download-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover and Active Effects */
+.download-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slightly raise the button */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.download-btn:active {
+    background-color: #388e3c;
+    transform: translateY(1px); /* Button presses down when clicked */
+}
+
+/* Focus Effect */
+.download-btn:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5); /* Add a soft focus ring */
+}

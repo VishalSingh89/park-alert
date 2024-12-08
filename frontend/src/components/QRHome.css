@@ -1,0 +1,18 @@
+.vehicle-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .vehicle-details {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .vehicle-details p {
+    margin: 10px 0;
+  }
+  
+  .vehicle-details strong {
+    font-weight: bold;
+  }
+  
