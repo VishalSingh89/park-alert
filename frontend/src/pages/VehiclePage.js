@@ -9,7 +9,7 @@ const VehiclePage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/vehicles/${id}`)
+      .get(`https://park-alert.onrender.com/${id}`)
       .then((response) => setVehicle(response.data.data))
       .catch((err) => setError('Vehicle not found'));
   }, [id]);

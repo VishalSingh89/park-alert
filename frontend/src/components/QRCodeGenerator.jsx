@@ -12,7 +12,7 @@ const QRCodeGenerator = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/vehicles', { owner, phone, licensePlate });
+      const { data } = await axios.post('https://park-alert.onrender.com/', { owner, phone, licensePlate });
       const qrData = `${window.location.origin}/vehicle/${data.data._id}`;
       // Save QR data to localStorage or pass via route
       localStorage.setItem('qrData', qrData);
