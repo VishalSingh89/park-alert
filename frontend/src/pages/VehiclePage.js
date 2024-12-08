@@ -23,7 +23,7 @@ const VehiclePage = () => {
       <p><strong>Owner:</strong> {vehicle.owner}</p>
       <p><strong>Phone:</strong> {vehicle.phone}</p>
       <p><strong>License Plate:</strong> {vehicle.licensePlate}</p>
-      <a href={`tel:${vehicle.phone}`}>Call Owner</a> | <a href={`sms:${vehicle.phone}`}>Send SMS</a>
+      <a href={`tel:${vehicle.phone}`}>Call Owner</a> | <a href={`sms:${vehicle.phone}`}>SMS</a>
     </div>
   );
 };
