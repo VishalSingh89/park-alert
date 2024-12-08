@@ -13,7 +13,7 @@ const QRHome = () => {
   useEffect(() => {
     const fetchVehicle = async () => {
       try {
-        const response = await axios.get(`https://park-alert.onrender.com/${id}`);
+        const response = await axios.get(`https://park-alert.onrender.com/api/vehicles/${id}`);
         setVehicle(response.data.data); // Store the vehicle data
         setLoading(false);
       } catch (error) {
